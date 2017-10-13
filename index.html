@@ -44,6 +44,7 @@
 	if (feature.properties && feature.properties.scientif_1 && feature.properties.verbatimLo) {
 	  popupContent += feature.properties.scientif_1 ; 
 	  popupContent += "<br>" + feature.properties.verbatimLo;
+	  popupContent += "<br>" + feature.properties.decimalLat + feature.properties.decimalLon;
 	}
 
 	layer.bindPopup(popupContent);
