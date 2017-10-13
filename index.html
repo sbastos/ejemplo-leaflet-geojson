@@ -39,7 +39,13 @@
       }).addTo(map);
 	    
 	    
-	    
+	L.geoJson(rios, {
+        style: function (feature) {
+	  return {
+            color: '#0040FF';	  
+          };
+        }
+      }).addTo(map);  
 	    
       function onEachFeature(feature, layer) {
 	var popupContent = "";
@@ -76,14 +82,7 @@
 	onEachFeature: onEachFeature
       }).addTo(map);	
 	    
-      L.geoJson(rios, {
-        style: function (feature) {
-	  return {
-            fillColor: '#0000ff', 
-            color: '#0040FF';	  
-          };
-        }
-      }).addTo(map);
+
 	    
 	    
 	    
